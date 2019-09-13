@@ -1,0 +1,3 @@
+[submodule "storage/hubs/generator"]
+	path = storage/hubs/generator
+	url = https://github.com/huo376230434/generator.git

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a81ea5a73ebc29fdd013d76177a616e",
+    "content-hash": "290070bcacd5853494ff32142eb9a08f",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -421,6 +421,34 @@
                 "trusted proxy"
             ],
             "time": "2019-09-03T16:45:42+00:00"
+        },
+        {
+            "name": "huojunhao/generator",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "storage/hubs/generator",
+                "reference": "6bd8a297deadc2173529c885ac74fbd406eb196b"
+            },
+            "require": {
+                "laravel/framework": ">=5.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Huojunhao\\Generator\\GeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Huojunhao\\Generator\\": "src/"
+                }
+            },
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -5380,7 +5408,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "huojunhao/generator": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

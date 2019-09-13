@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+        "huojunhao/generator": "dev-master",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0"
     },
@@ -57,5 +58,14 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "storage/hubs/generator",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
 }
